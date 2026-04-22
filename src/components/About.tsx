@@ -25,15 +25,15 @@ const About = () => {
             viewport={{ once: true }}
           >
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Développeur Full Stack passionné, je me spécialise dans la création d&apos;applications web robustes et scalables.
+              Étudiant passionné en **Master 1 d&apos;Informatique**, je possède une base solide acquise durant ma **Licence Universitaire**. Je me spécialise dans le développement d&apos;applications web modernes et performantes.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Mon expertise couvre l&apos;ensemble de la stack technique, de la conception d&apos;interfaces utilisateur intuitives au développement d&apos;architectures backend performantes.
+              Mon cursus académique m&apos;a permis de maîtriser l&apos;ensemble de la stack technique, de la conception d&apos;interfaces utilisateur intuitives à la mise en place d&apos;architectures backend robustes.
             </p>
             <div className="grid grid-cols-1 gap-4">
               <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                <h4 className="font-bold text-2xl text-blue-600">3+</h4>
-                <p className="text-gray-500">Années d&apos;Expérience</p>
+                <h4 className="font-bold text-2xl text-blue-600">M1</h4>
+                <p className="text-gray-500">Master en cours</p>
               </div>
             </div>
           </motion.div>
