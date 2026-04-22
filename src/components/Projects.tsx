@@ -11,24 +11,24 @@ const Projects = () => {
       description: "Une plateforme complète avec panier, paiement Stripe et gestion de stock.",
       image: "/next.svg", // Placeholder
       tags: ["Next.js", "TypeScript", "Stripe", "Prisma"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com",
+      demo: "https://vercel.com",
     },
     {
       title: "SaaS Dashboard",
       description: "Tableau de bord analytique avec graphiques en temps réel et authentification.",
       image: "/next.svg", // Placeholder
       tags: ["React", "Recharts", "Firebase", "Tailwind"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com",
+      demo: "https://vercel.com",
     },
     {
       title: "Task Manager",
       description: "Application de gestion de tâches collaborative avec mises à jour en direct.",
       image: "/next.svg", // Placeholder
       tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com",
+      demo: "https://vercel.com",
     },
   ];
 
@@ -48,42 +48,50 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all group"
+              className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
             >
-              <div className="relative h-48 bg-gray-100 flex items-center justify-center">
+              <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width={100}
-                  height={100}
-                  className="group-hover:scale-110 transition-transform duration-500 opacity-20"
+                  fill
+                  className="object-contain p-8 group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition-colors"></div>
               </div>
+              
               <div className="p-6">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm line-clamp-2">{project.description}</p>
+                <p className="text-gray-600 mb-4 line-clamp-2">{project.description}</p>
+                
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag) => (
-                    <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-600 text-xs font-medium rounded">
+                    <span
+                      key={tag}
+                      className="px-3 py-1 bg-blue-50 text-blue-600 text-sm font-medium rounded-full"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="flex items-center gap-4">
+                
+                <div className="flex justify-between items-center">
                   <a
                     href={project.github}
-                    className="flex items-center gap-1 text-sm font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
                   >
                     <Code size={18} />
                     Code
                   </a>
                   <a
                     href={project.demo}
-                    className="flex items-center gap-1 text-sm font-semibold text-gray-900 hover:text-blue-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-bold"
                   >
+                    Demo
                     <ExternalLink size={18} />
-                    Démo
                   </a>
                 </div>
               </div>
