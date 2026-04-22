@@ -7,15 +7,13 @@ const About = () => {
   const skills = [
     { name: "Frontend", icon: <Layout size={24} />, tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"] },
     { name: "Backend", icon: <Database size={24} />, tags: ["Node.js", "Express", "PostgreSQL", "Prisma"] },
-    { name: "Outils", icon: <Terminal size={24} />, tags: ["Git", "Docker", "Vercel", "AWS"] },
-    { name: "Langages", icon: <Code2 size={24} />, tags: ["JavaScript", "Python", "SQL", "HTML/CSS"] },
   ];
 
   return (
     <section id="about" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">À Propos de Moi</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mes Compétences</h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
         </div>
 
@@ -26,19 +24,15 @@ const About = () => {
             viewport={{ once: true }}
           >
             <p className="text-lg text-gray-600 leading-relaxed mb-6">
-              Passionné par le développement web depuis plusieurs années, j&apos;aime relever des défis techniques et transformer des idées complexes en solutions numériques élégantes.
+              Développeur Full Stack passionné, je me spécialise dans la création d&apos;applications web robustes et scalables.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              Mon approche est centrée sur la performance, l&apos;accessibilité et l&apos;expérience utilisateur. Je suis toujours en quête d&apos;apprentissage pour rester à la pointe des technologies modernes.
+              Mon expertise couvre l&apos;ensemble de la stack technique, de la conception d&apos;interfaces utilisateur intuitives au développement d&apos;architectures backend performantes.
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4">
               <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-100">
                 <h4 className="font-bold text-2xl text-blue-600">3+</h4>
                 <p className="text-gray-500">Années d&apos;Expérience</p>
-              </div>
-              <div className="p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                <h4 className="font-bold text-2xl text-blue-600">20+</h4>
-                <p className="text-gray-500">Projets Terminés</p>
               </div>
             </div>
           </motion.div>

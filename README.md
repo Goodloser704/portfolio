@@ -1,4 +1,4 @@
-# Nero Portfolio
+# Niaina Portfolio
 
 Ceci est un portfolio moderne construit avec [Next.js](https://nextjs.org), [Tailwind CSS](https://tailwindcss.com) et [Framer Motion](https://www.framer.com/motion/).
 

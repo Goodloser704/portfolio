@@ -17,12 +17,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "À propos", href: "#about" },
-    { name: "Projets", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
-
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -32,20 +26,23 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-gray-900">
-            Nero<span className="text-blue-600">.</span>
+            Niaina<span className="text-blue-600">.</span>
           </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-              >
-                {link.name}
-              </Link>
-            ))}
+            <Link
+              href="#about"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              À propos
+            </Link>
+            <Link
+              href="#contact"
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              Contact
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -68,16 +65,20 @@ const Navbar = () => {
           className="md:hidden bg-white border-t"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
+            <Link
+              href="#about"
+              className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              À propos
+            </Link>
+            <Link
+              href="#contact"
+              className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
           </div>
         </motion.div>
       )}
