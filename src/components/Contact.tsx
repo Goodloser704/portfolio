@@ -51,11 +51,17 @@ const Contact = () => {
             viewport={{ once: true }}
             className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100"
           >
-            <form className="space-y-4">
+            <form 
+              action="https://formspree.io/f/mqaebrqg" 
+              method="POST"
+              className="space-y-4"
+            >
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Nom</label>
                 <input
                   type="text"
+                  name="name"
+                  required
                   className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                   placeholder="Votre nom"
                 />
@@ -64,6 +70,8 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
                 <input
                   type="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                   placeholder="votre@email.com"
                 />
@@ -71,6 +79,8 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
                 <textarea
+                  name="message"
+                  required
                   rows={4}
                   className="w-full px-4 py-2 rounded-lg border border-gray-200 focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all"
                   placeholder="Comment puis-je vous aider ?"
