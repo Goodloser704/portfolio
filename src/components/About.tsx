@@ -6,7 +6,8 @@ import { Code2, Layout, Database, Terminal } from "lucide-react";
 const About = () => {
   const skills = [
     { name: "Frontend", icon: <Layout size={24} />, tags: ["React", "Next.js", "Tailwind CSS", "TypeScript"] },
-    { name: "Backend", icon: <Database size={24} />, tags: ["Node.js", "Express", "PostgreSQL", "Prisma"] },
+    { name: "Backend", icon: <Database size={24} />, tags: ["Node.js", "Java", "Python", "Express", "Prisma"] },
+    { name: "Databases", icon: <Terminal size={24} />, tags: ["PostgreSQL", "MongoDB", "MySQL", "Redis"] },
   ];
 
   return (
